@@ -19,7 +19,6 @@ import IconPinterest from '@parameter1/base-cms-marko-web-icons/browser/pinteres
 import IconTwitter from '@parameter1/base-cms-marko-web-icons/browser/twitter.vue';
 import IconOther from '@parameter1/base-cms-marko-web-icons/browser/link-external.vue';
 import IconAnchor from '@parameter1/base-cms-marko-web-icons/browser/anchor.vue';
-import IconMegaphone from '@parameter1/base-cms-marko-web-icons/browser/megaphone.vue';
 import IconYoutube from '@parameter1/base-cms-marko-web-icons/browser/youtube.vue';
 
 export default {
@@ -27,7 +26,6 @@ export default {
     IconFacebook,
     IconInstagram,
     IconLinkedin,
-    IconMegaphone,
     IconOther,
     IconPinterest,
     IconAnchor,
