@@ -13,11 +13,11 @@ const shouldOverlay = (contentMeterState) => {
 const defaultHandler = ({ content }) => get(content, 'userRegistration.isCurrentlyRequired');
 
 const restrictContentByReg = (contentMeterState, handler, content) => {
-  if (!contentMeterState) return false;
-
   // If content is gated by reg return true all the time
   const contentReg = isFn(handler) ? handler({ content }) : defaultHandler({ content });
   if (contentReg === true) return true;
+
+  if (!contentMeterState) return false;
 
   const { isLoggedIn, requiresUserInput } = contentMeterState;
   const displayOverlay = shouldOverlay(contentMeterState);
